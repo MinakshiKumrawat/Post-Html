@@ -1,0 +1,144 @@
+@import "font-famliy.scss";
+@import "mixin.scss";
+@import "post1.scss";
+@import "post2.scss";
+@import "animation.scss";
+
+body{
+    background-image: url("../images/main-bg.jpg");
+}
+.main-block{
+  
+    padding: 50px 0 0;
+   
+}
+
+.content-section{
+    text-align: right;
+
+    h1{
+       @include mainTitle;
+       padding: 0 90px;
+
+       b{
+           font-weight: 700
+       }
+    }
+
+    h3{
+       @include heading;
+      
+    }
+
+    p{
+       @include textStyle;
+     
+    }
+
+    .coin-img-section{
+        min-height: 284px;
+        position: relative;
+        max-width: 405px;
+        margin: 115px auto 50px;
+        z-index: 1;
+
+        img{
+            position: absolute;
+        }
+
+        .coin1-img{
+           
+            top: 0;
+            max-width: 125px;
+            left: 135px;
+        }
+
+        .coin2-img{
+            top: 160px;
+            max-width: 125px;
+            left: 70px;
+        }
+
+        .coin3-img{
+            max-width: 80px;
+            top: 117px;
+            right: 22px;
+        
+        }
+    }
+}
+
+
+.post-block{
+
+     max-width: 1366px;
+     margin: auto;
+     position: relative;
+     display: flex;
+
+     .left-section{
+        position: relative;
+        width: 58%;
+     }
+
+     .right-section{
+        width:42%;
+     }
+
+     .girl-img {
+    
+        img{
+        z-index: 1;
+        max-width: 600px;
+        transition: 0.5s all;
+        }
+
+     }
+
+.graph-section{
+    text-align: center;
+    margin-bottom: 40px;
+    img{
+        width: 385px;
+   }
+}
+
+.sub-content-section{
+    padding: 0 60px;
+    text-align: center;
+  
+ }
+}
+
+
+#img-slide a{
+    position: absolute;
+    left: 172px;
+    top: 68px;
+}
+
+.girl-bottom-img {
+    position: absolute;
+    bottom: -49px;
+    left: -4px;
+
+    img{
+        max-width: 495px;
+    }
+
+}
+
+  #img-slide a:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    z-index: 20;
+    transition: .5s all;
+  }
+
+  #img-slide a:nth-of-type(2) {
+    display: none;
+  }
+ 
+
+ 

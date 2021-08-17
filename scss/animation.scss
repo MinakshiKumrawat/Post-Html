@@ -1,0 +1,75 @@
+
+.box {
+  animation: bounce 0.8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+
+}
+.coin1-img{
+    animation-delay: 0ms;
+    animation-iteration-count:min(5);
+}
+.coin3-img{
+    animation-delay: 5s;
+    animation-iteration-count:min(5);
+}
+.coin2-img{
+    animation-delay: 10s;
+    animation-iteration-count:min(5);
+}
+
+@keyframes bounce { 
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50px); }
+  }
+
+  .arrow1 {
+    animation: slide1 1s ease-in-out infinite;
+    margin-left: 9px;
+  }
+
+  @keyframes slide1 {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+  
+    50% {
+      transform: translate(10px, 0);
+    }
+  }
+
+  .coin-img-section img:nth-child(1){
+    animation: bounce 1s ease-in-out infinite;
+  }
+  
+  .coin-img-section img:nth-child(2){
+    animation: bounce 1s ease-in-out 0.50s infinite;
+  }
+  
+  .coin-img-section img:nth-child(3){
+    animation: bounce 1s ease-in-out 0.66s infinite;
+  }
+  
+  @keyframes bounce{
+    0%, 75%, 100%{
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    25%{
+      -webkit-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+      -o-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+  }
+  
+  @keyframes fader {
+    from { opacity: 1.0; }
+    to   { opacity: 0.0; }
+  }
+  
+  
